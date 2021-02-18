@@ -1,0 +1,154 @@
+body{
+    background: #fffff8;
+    font-family: 'Oswald', sans-serif;
+    color: #f27781;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    width: 400px;
+    height: 50px;
+    background: #3b4a6b;
+    color: #f27781;
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+    margin-top: 15px;
+}
+
+button:hover {
+    color: #A6A6A6;
+}
+
+input:focus, select:focus, textarea:focus, button:focus {
+    outline: none;
+}
+
+#outergrid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #F2F2F2;    
+}
+
+#centercolumn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 100vh;
+    background-color: #D9D9D9;
+}
+
+#app {
+    height: auto;
+    width: 100%;
+    background-color: #736766;
+}
+
+#headline {
+    padding: 10px;
+    font-size: 40px;
+    text-align: center;
+}
+
+#zip {
+    height: 50px;
+    width: 400px;
+}
+
+#feelings {
+    height: 200px;
+    width: 400px;
+    margin-top: 20px;
+}
+
+#entrytitle {
+    height: 150px;
+    margin-top: 20px;
+    color: #f27781;
+}
+
+#entryholder {
+    display: flex;
+    flex-direction: row;
+    color: #f0d43a;
+    font-size: 16px;
+}
+
+#entryholderleft {
+    width: 170px;
+    margin-right: 10px;
+}
+
+#entryholderright {
+    display: flex;
+    justify-content: center;
+    width: 430px;
+}
+
+#feelingsrecall {
+    width: 260px;
+    height: 100px;
+    font-size: 16px;
+    color: #f0d43a;
+    background:#A67356;
+    border: none;
+    font-family: 'Oswald', sans-serif;
+}
+
+.input {
+    box-sizing: border-box;
+    padding: 10px;
+    color: #f0d43a;
+    background:#A67356;
+    font-size: 20px;
+    border: none;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* BROWSER SPECIFIC STYLING */
+
+::placeholder { /* Firefox, Chrome, Opera */ 
+    color: #A6A6A6; 
+    font-family: 'Oswald', sans-serif;
+} 
+  
+::-ms-input-placeholder { /* Internet Explorer 10-11 */ 
+    color: #A6A6A6; 
+    font-family: 'Oswald', sans-serif;
+
+} 
+  
+::-ms-input-placeholder { /* Microsoft Edge */ 
+    color: #A6A6A6; 
+    font-family: 'Oswald', sans-serif;
+
+} 
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* Chrome, Safari */
+textarea::-webkit-scrollbar {
+    width: 5px;
+}
+
+textarea::-webkit-scrollbar-track {
+    box-shadow: none;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: #f27781;
+}

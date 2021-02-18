@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Journal</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="outergrid">
+        <div id="centercolumn">
+            <div id="app">
+                <div class="holder" id="headline">
+                    Weather Journal App
+                </div>
+
+                <div class="holder">
+                    <input type="number" class="input" id="zip" placeholder="Enter zipcode here">
+                </div>
+                
+                <div class="holder">
+                    <textarea class="input" id="feelings" placeholder="Enter your feelings here"></textarea>
+                </div>
+
+                <div class="holder">
+                    <button id="generate" type="submit"> Get Weather Data </button>
+                </div>
+
+                <div class="input" id="entryholder">
+                    <div class="entrytext" id="dataentry">Weather Data
+                        <div id="weatherdata">
+                            <div id="country"></div>
+                            <div id="city"></div>
+                            <div id="date"></div>
+                            <div id="temp"></div>
+                        </div>
+                    </div>
+
+                    <div class="entrytext" id="journalentry">Journal Entry
+                        <div id="journaldata">
+                            <div id="content">
+                                <textarea id="feelingsrecall"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="holder">
+                    <div class="input" id="entrytitle">Weather Data
+                        <div id="entryholder">
+                            <div id="entryholderleft">
+                                <div id="country"></div>
+                                <div id="city"></div>
+                                <div id="date"></div>
+                                <div id="temp"></div>
+                            </div>
+                            <div id="entryholderright">
+                                <div id="content">
+                                    <textarea class="" id="feelingsrecall"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js" type="text/javascript"></script>
+</body>
+
+</html>
