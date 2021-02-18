@@ -1,10 +1,10 @@
 # Weather-Journal App Project
 
 ## Overview
-This project requires you to create an asynchronous web app that uses Web API and user data to dynamically update the UI. 
+Enter a valid zip-code in America and get the weather data from that city. Enter how you feel and the data will be saved as well.
 
-## Instructions
-This will require modifying the `server.js` file and the `website/app.js` file. You can see `index.html` for element references, and once you are finished with the project steps, you can use `style.css` to style your application to customized perfection.
+## Limitations
+You can only enter zip-codes from The United States. You have to enter 5 digits otherwise an alert will be shown.
 
-## Extras
-If you are interested in testing your code as you go, you can use `tests.js` as a template for writing and running some basic tests for your code.
+## Weather Data Source
+Data is pulled from "openweathermap.org" and shown in metric units. Sorry for all you imperial guys out there. Learn the metric system... you'll thank me later :)
