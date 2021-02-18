@@ -1,5 +1,5 @@
 // Setup empty JS object to act as endpoint for all routes
-let projectData = {};
+let projectData = [];
 
 // Express to run server and routes
 const express = require('express');
@@ -37,13 +37,14 @@ app.post('/addData', (request, response) => {
     const temperature = request.body.main.temp;
     const date = new Date(request.body.dt*1000).toLocaleDateString('dk-DK', dayOptions);
     const feelings = request.body.feelings;
-    projectData = {city, date, temperature, feelings};
+    projectData.push({city, date, temperature, feelings});
 
-    console.log('POST received');
+    console.log('POST received', projectData.length);
     response.send();
 });
 
 app.get('/getData', (request, response) => {
     console.log('GET received');
-    response.send(projectData);
+    console.log(projectData[0]);
+    response.send(projectData[projectData.length - 1]);
 });
